@@ -1,6 +1,8 @@
-function testAlert(message) {
-    alert(message);
-}
+document.querySelector("#open-nav-menu").addEventListener("click",function(){
+    document.querySelector("header nav .wrapper").classList.add("nav-open");
+});
 
-testAlert("yo");
-console.log("test from concole.log");
+
+document.querySelector("#close-nav-menu").addEventListener("click",function(){
+    document.querySelector("header nav .wrapper").classList.remove("nav-open");
+});
